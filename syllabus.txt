@@ -1,0 +1,402 @@
+====================================================================
+FAANG SYSTEM DESIGN BOOTCAMP (14 DAYS | 3–4 HOURS DAILY)
+Target: Backend-Focused SDE-1 / Internship Level
+Starting Level: Zero
+Method: Concept → Mental Model → Hands-on → Verification → Defense
+====================================================================
+
+
+############################
+PHASE 0 — ENVIRONMENT SETUP (Half Day)
+############################
+
+Objective:
+Prepare your system for hands-on learning.
+
+Topics:
+- Install Python (latest stable)
+- Install Django
+- Install PostgreSQL
+- Install Redis
+- Install Docker
+- Install Postman
+- Install VSCode
+- Learn basic terminal commands
+
+Deliverables:
+- Run Django server
+- Connect PostgreSQL
+- Run Redis locally
+- Test one API using Postman
+
+Time:
+3–4 hours
+
+
+====================================================================
+PHASE 1 — HOW THE INTERNET & BACKEND REALLY WORK (Days 1–3)
+====================================================================
+
+GOAL:
+Build strong foundation of request lifecycle & data flow.
+
+
+----------------------------
+DAY 1 — INTERNET CORE
+----------------------------
+
+Chapter 1: What Happens When You Type google.com
+
+Subtopics:
+- DNS resolution
+- IP addresses
+- TCP handshake
+- HTTP request
+- HTTPS & TLS
+- Ports
+- Client vs Server
+
+Mental Models:
+- Internet as postal system
+- TCP as reliable courier
+- HTTPS as locked envelope
+
+Hands-On:
+- Use ping command
+- Use curl to make HTTP request
+- Inspect Chrome Network tab
+- Capture request headers
+
+Deliverable:
+Explain full request lifecycle step-by-step without notes.
+
+Verification:
+Draw request flow in text diagram.
+
+
+----------------------------
+DAY 2 — SERVER & API DEEP DIVE
+----------------------------
+
+Chapter 2: Backend Lifecycle
+
+Subtopics:
+- What is a server?
+- Stateless vs Stateful
+- REST API principles
+- HTTP methods (GET, POST, PUT, DELETE)
+- Status codes
+- JSON format
+- Sessions vs JWT
+- Middleware concept
+
+Hands-On:
+- Build simple login API
+- Inspect raw HTTP request
+- Add middleware logging
+
+Deliverable:
+Explain statelessness & JWT clearly.
+
+Verification:
+Design small auth system verbally.
+
+
+----------------------------
+DAY 3 — DATABASE FOUNDATIONS
+----------------------------
+
+Chapter 3: Database Mechanics
+
+Subtopics:
+- SQL vs NoSQL
+- Relational model
+- Primary key
+- Foreign key
+- Indexing
+- B-Tree intuition
+- Query execution
+- Normalization (1NF, 2NF, 3NF)
+- Read vs Write cost
+
+Hands-On:
+- Design Users, Posts, Comments schema
+- Add index and test query speed
+- Write JOIN queries
+
+Deliverable:
+Design schema for blog app.
+
+Verification:
+Explain why indexes speed reads but slow writes.
+
+
+
+====================================================================
+PHASE 2 — SCALING & PERFORMANCE (Days 4–6)
+====================================================================
+
+GOAL:
+Understand how systems survive millions of users.
+
+
+----------------------------
+DAY 4 — SCALING FUNDAMENTALS
+----------------------------
+
+Chapter 4: Scaling
+
+Subtopics:
+- Vertical scaling
+- Horizontal scaling
+- Single Point of Failure
+- High Availability
+- Throughput vs Latency
+- Load vs Stress
+
+Hands-On:
+- Simulate load with simple Python script
+- Observe response time
+
+Deliverable:
+Explain when vertical scaling fails.
+
+
+----------------------------
+DAY 5 — LOAD BALANCERS
+----------------------------
+
+Chapter 5: Traffic Distribution
+
+Subtopics:
+- What is load balancer?
+- Round robin
+- Least connections
+- Sticky sessions
+- Reverse proxy
+- Nginx basics
+
+Hands-On:
+- Run two Django servers
+- Simulate traffic split
+
+Deliverable:
+Draw system with load balancer.
+
+
+----------------------------
+DAY 6 — CACHING
+----------------------------
+
+Chapter 6: Caching Systems
+
+Subtopics:
+- Why caching matters
+- Cache aside pattern
+- Write-through vs Write-back
+- Redis basics
+- TTL
+- Cache invalidation
+- CDN concept
+
+Hands-On:
+- Add Redis caching
+- Measure speed difference
+
+Deliverable:
+Explain cache invalidation problem clearly.
+
+
+
+====================================================================
+PHASE 3 — DISTRIBUTED SYSTEM CORE (Days 7–9)
+====================================================================
+
+GOAL:
+Understand real FAANG-level system behavior.
+
+
+----------------------------
+DAY 7 — CAP & CONSISTENCY
+----------------------------
+
+Chapter 7: Distributed Trade-offs
+
+Subtopics:
+- CAP theorem
+- Strong consistency
+- Eventual consistency
+- Partition tolerance
+- Real-world examples
+
+Deliverable:
+Explain why Instagram feed can be eventually consistent.
+
+
+----------------------------
+DAY 8 — REPLICATION & SHARDING
+----------------------------
+
+Chapter 8: Database Scaling
+
+Subtopics:
+- Leader-follower replication
+- Read replicas
+- Write bottlenecks
+- Sharding strategies
+- Hot partition problem
+
+Hands-On:
+- Design sharded user system
+
+Deliverable:
+Explain why sharding is hard.
+
+
+----------------------------
+DAY 9 — ASYNC & MESSAGING
+----------------------------
+
+Chapter 9: Background Processing
+
+Subtopics:
+- Sync vs Async
+- Message queues
+- Pub/Sub model
+- Kafka intuition
+- Worker systems
+- Idempotency
+
+Hands-On:
+- Add background email task
+
+Deliverable:
+Explain why async improves performance.
+
+
+
+====================================================================
+PHASE 4 — ARCHITECTURE THINKING (Days 10–11)
+====================================================================
+
+GOAL:
+Think like system architect.
+
+
+----------------------------
+DAY 10 — MONOLITH VS MICROSERVICES
+----------------------------
+
+Subtopics:
+- Service boundaries
+- API Gateway
+- Deployment complexity
+- Data consistency issues
+
+Deliverable:
+Choose architecture for startup.
+
+
+----------------------------
+DAY 11 — FAILURE DESIGN
+----------------------------
+
+Subtopics:
+- Retries
+- Circuit breaker
+- Rate limiting
+- Throttling
+- Observability
+- Logging
+- Monitoring basics
+
+Deliverable:
+Design resilient payment system.
+
+
+
+====================================================================
+PHASE 5 — FAANG-STYLE SYSTEM DESIGN PRACTICE (Days 12–14)
+====================================================================
+
+Each Day:
+1 Major System Design Problem
+
+
+DAY 12:
+Design URL Shortener
+
+DAY 13:
+Design Instagram Feed
+
+DAY 14:
+Design WhatsApp Chat System
+
+
+For each problem:
+
+Step 1: Requirements gathering
+Step 2: Traffic estimation
+Step 3: API design
+Step 4: Database design
+Step 5: High-level architecture
+Step 6: Scaling plan
+Step 7: Bottlenecks
+Step 8: Improvements
+
+
+
+====================================================================
+DAILY STRUCTURE (3–4 HOURS)
+====================================================================
+
+Hour 1:
+Deep learning & mental model
+
+Hour 2:
+Hands-on implementation
+
+Hour 3:
+Defense & explanation
+
+Hour 4:
+Revision & refinement
+
+
+
+====================================================================
+PRACTICE RESOURCES
+====================================================================
+
+- Use local Django app for all backend work
+- Use PostgreSQL for DB exercises
+- Use Redis locally
+- Use simple load scripts
+- Use Draw.io for architecture diagrams
+
+
+
+====================================================================
+EVALUATION RULE
+====================================================================
+
+You cannot move forward unless you can:
+
+- Explain concept without notes
+- Draw system diagram in text
+- Identify trade-offs
+- Answer 5 conceptual questions
+- Defend design decisions
+
+
+
+====================================================================
+END GOAL AFTER 14 DAYS
+====================================================================
+
+You will:
+- Understand backend deeply
+- Understand scaling basics
+- Handle SDE-1 level system design rounds
+- Speak confidently about architecture
+- Think beyond CRUD apps

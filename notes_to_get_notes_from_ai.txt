@@ -1,0 +1,12 @@
+Generate ultra-condensed, high-signal notes for the chapter: [CHAPTER NAME].
+
+Rules:
+- Structured format
+- Definitions in 1 line
+- Key concepts in bullet points
+- Diagrams in text form
+- Trade-offs clearly listed
+- Interview-level insights included
+- Common mistakes included
+- End with 5 revision questions
+- No unnecessary theory
